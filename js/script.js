@@ -51,8 +51,6 @@ for (var i = 0; i < resultsContainer.length; i++) {
   para.innerHTML = "New Paragraph";
 }
 
-console.log(resultsContainer);
-
 // Question 7
 
 function LoopList(list) {
@@ -65,22 +63,4 @@ LoopList(cats);
 
 // Question 8
 
-function createCats(cats) {
-  const catcontainer = document.getElementsByClassName("cat-container");
-
-  const container = document.createElement("div");
-  const catName = document.createElement("h5");
-  const catAge = document.createElement("p");
-
-  cats.forEach((cat) => {
-    catName.innerHTML = cat.name;
-    catAge.innerHTML = cat.age;
-  });
-
-  for (var i = 0; i < catcontainer.length; i++) {
-    catcontainer[i].append(container);
-    container.append(catName, catAge);
-  }
-}
-
-createCats(cats);
+// Couldn't quite figure out this one.
